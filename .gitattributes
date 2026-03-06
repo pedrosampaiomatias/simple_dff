@@ -1,0 +1,2 @@
+# Ensure .sv files use LF so patches apply consistently in Docker/Linux
+*.sv text eol=lf
