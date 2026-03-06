@@ -1,0 +1,14 @@
+diff --git a/sources/dff.sv b/sources/dff.sv
+index 0cdeb2d..acec1bb 100644
+--- a/sources/dff.sv
++++ b/sources/dff.sv
+@@ -5,6 +5,8 @@ module dff (
+   output logic q
+ );
+ 
+-// Internal logic
++always @(posedge clk) begin
++  q <= d;
++end
+ 
+ endmodule
